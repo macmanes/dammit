@@ -380,7 +380,7 @@ def get_busco_task(input_filename, output_name, busco_db_dir, input_type,
     name = 'busco:' + os.path.basename(input_filename) + '-' + os.path.basename(busco_db_dir)
 
     assert input_type in ['genome', 'OGS', 'trans']
-    exc = which('BUSCO_v1.1b1.py')
+    exc = which('BUSCO_v1.1b1.py') or which('BUSCO_v1.22.py')
     # BUSCO chokes on file paths as output names
     output_name = os.path.basename(output_name)
 
