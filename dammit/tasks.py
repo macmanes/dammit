@@ -17,7 +17,7 @@ from doit.task import clean_targets, dict_to_task
 import pandas as pd
 from khmer import HLLCounter, ReadParser
 
-from common import which
+from common import whichs
 from . import parsers
 from .hits import BestHits
 from .fileio import maf
